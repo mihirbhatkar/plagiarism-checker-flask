@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Plagiarism Checker</title>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="{{ url_for('static', filename='style.css') }}"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Plagiarism Checker</h1>
+			<form method="POST">
+				<p>Input Text:</p>
+				<textarea name="query" rows="8" cols="50" autofocus>
+{{query}}</textarea
+				>
+				<br />
+				<input
+					type="submit"
+					name="submit"
+					value="CHECK PLAGIARISM"
+					class="submit-button"
+				/>
+				<br />
+				<h3>{{output}}</h3>
+			</form>
+		</div>
+	</body>
+</html>

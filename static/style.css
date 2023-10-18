@@ -1,0 +1,36 @@
+body{
+     min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: monospace;
+}
+
+.container {
+    max-width: 600px; /* Adjust this width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center text within the container */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding doesn't increase the width */
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    font-family: monospace;
+    margin: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
